@@ -1,0 +1,333 @@
+:root{
+    --blanco: #ffffff;
+    --gris: #585858;
+    --negro: #000000;
+    --marrón: #262626;
+}
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: var(--blanco);
+    font-weight: 200;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#navbar{
+    display: flex;
+    justify-content:right;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    padding: 20px 0;
+    font-size: 15px;
+    border-bottom: 1px solid var(--negro);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: var(--negro);
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 2.5px rgba(100, 100, 100, 0.3);
+}
+
+.nav-links a:active {
+    text-decoration: none;
+    background-color: var(--blanco);
+    color: var(--negro);
+    font-size: 16px;
+    box-shadow: none;
+    border: 0.5px solid var(--negro);
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(43, 43, 43));
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+    font-weight: 300;
+    font-size: 5em;
+}
+
+#welcome-section p {
+    color: var(--blanco);
+    font-size: 25px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+
+
+#projects {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+#projects h1 {
+    border-bottom: 3px solid var(--negro);
+    width: 1200px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2em;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 20px;
+}
+
+#projects .projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    padding: 50px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects .project-tile {
+    height: 378px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+}
+
+#projects .project-tile img {
+    width: 100%;
+    height: 338px;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#projects .project-tile img:hover {
+    position:;
+    width: 100%;
+    height: 338px;
+    top: 0;
+    transition: transform .10s;
+    opacity: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+#projects .project-tile p {
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+#projects .project-tile p:hover .project-tile img {
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    opacity: 0;
+}
+
+#projects .project-tile span {
+    opacity: 1;
+    padding: 0 5px;
+}
+
+#projects2 .project-tile span:hover {
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+}
+
+/*START PROJECTS 2*/
+
+#projects2 {
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+
+#projects2 h1 {
+    border-bottom: 3px solid var(--negro);
+    width: 1200px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 2em;
+    background-color: var(--negro);
+    color: var(--blanco);
+    border-radius: 20px;
+}
+
+#projects2 .projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+    padding: 50px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#projects2 .project-tile {
+    height: 378px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.3);
+}
+
+#projects2 .project-tile img {
+    width: 100%;
+    height: 338px;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#projects2 .project-tile img:hover {
+    position:;
+    width: 100%;
+    height: 338px;
+    top: 0;
+    transition: transform .10s;
+    opacity: 1;
+    border-radius: 5px 5px 0 0;
+}
+
+#projects2 .project-tile p {
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+#projects .project-tile p:hover .project-tile img {
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    opacity: 0;
+}
+
+/*END PROJECTS 2*/
+
+/*CONTACT CARD*/
+
+#contact {
+    background-image: linear-gradient(to bottom right, rgb(44, 44, 44), rgb(0, 0, 0));
+    color: var(--blanco);
+}
+
+#contact h1 {
+    margin-top: 250px;
+    font-weight: 300;
+}
+
+#contact .coffee-question {
+    color: var(--blanco);
+    font-size: 15px;
+    font-style: italic;
+}
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#contact .social-media {
+    text-decoration: none;
+    color: var(--blanco);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+    margin-top: 150px;
+}
+
+#contact .social-media:hover {
+    transform: translateY(10px);
+}
+
+/*CONTACT CARD*/
+
+
+
+
+footer {
+    border-top: 1px solid var(--blanco);
+    color: var(--blanco);
+    font-size: 13px;
+    padding: 25px;
+    background-color: var(--negro);
+}
+
+@media only screen and (width < 700px) {
+    h1 {
+        font-size: 30px;
+    }
+    #projects .project-tile {
+        height: 600px;
+        width: 100%;
+    }
+}
